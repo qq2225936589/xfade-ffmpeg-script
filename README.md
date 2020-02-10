@@ -1,6 +1,8 @@
 # xfade-ffmpeg-script
 A bash script that uses ffmpeg's xfade transition filter to connect multiple video files to a single file.
+
 xfade transition filter - FFmpeg 2020.02.10+
+
 A bash script that uses ffmpeg's xfade transition filter to connect multiple video files to a single file.
 
 Apply cross fade from one input video stream to another input video stream. The cross fade is applied for specified duration.
@@ -56,4 +58,5 @@ The expressions can use the following variables and functions:
     Return the value of the pixel at location (x,y) of the first/second/third/fourth component of second input.
 
 Cross fade from one input video to another input video, with fade transition and duration of transition of 2 seconds starting at offset of 5 seconds Examples:
+
 ffmpeg -i first.mp4 -i second.mp4 -filter_complex xfade=transition=fade:duration=2:offset=5 output.mp4
